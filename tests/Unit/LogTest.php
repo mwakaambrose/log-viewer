@@ -1,7 +1,7 @@
 <?php
 
-use Opcodes\LogViewer\Level;
-use Opcodes\LogViewer\Log;
+use App\Level;
+use App\Log;
 use function PHPUnit\Framework\assertEquals;
 
 it('can understand the default Laravel log format', function () {

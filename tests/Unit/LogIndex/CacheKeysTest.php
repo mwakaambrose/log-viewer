@@ -1,6 +1,6 @@
 <?php
 
-use Opcodes\LogViewer\LogFile;
+use App\LogFile;
 
 it('can generate a cache key', function () {
     $file = Mockery::mock(new LogFile('test.log', 'test.log'))

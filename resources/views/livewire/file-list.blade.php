@@ -46,7 +46,7 @@
     <div id="file-list-container" class="relative h-full overflow-hidden" x-cloak>
         <div class="pointer-events-none absolute z-10 top-0 h-4 w-full bg-gradient-to-b from-gray-100 dark:from-gray-900 to-transparent"></div>
         <div class="file-list" x-ref="fileList" x-on:scroll="(event) => $store.fileViewer.onScroll(event)">
-    @php /** @var \Opcodes\LogViewer\LogFolder $folder */ @endphp
+    @php /** @var \App\LogFolder $folder */ @endphp
     @foreach($folderCollection as $folder)
         <div x-data="{ folder: '{{ $folder->identifier }}' }" :id="'folder-'+folder"
              class="relative folder-container"

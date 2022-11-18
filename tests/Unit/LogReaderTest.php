@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\File;
-use Opcodes\LogViewer\LogFile;
+use App\LogFile;
 
 beforeEach(function () {
     $this->file = generateLogFile();

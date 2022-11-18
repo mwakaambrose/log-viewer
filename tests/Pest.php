@@ -2,9 +2,9 @@
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\File;
-use Opcodes\LogViewer\LogFile;
-use Opcodes\LogViewer\LogIndex;
-use Opcodes\LogViewer\Tests\TestCase;
+use App\LogFile;
+use App\LogIndex;
+use App\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 uses()

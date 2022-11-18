@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Gate;
-use Opcodes\LogViewer\Facades\LogViewer;
+use App\Facades\LogViewer;
 use function Pest\Laravel\get;
 
 test('can define an "auth" callback for authorization', function () {

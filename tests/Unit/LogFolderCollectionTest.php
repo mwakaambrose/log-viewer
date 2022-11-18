@@ -1,10 +1,10 @@
 <?php
 
-use Opcodes\LogViewer\Facades\LogViewer;
-use Opcodes\LogViewer\LogFile;
-use Opcodes\LogViewer\LogFileCollection;
-use Opcodes\LogViewer\LogFolder;
-use Opcodes\LogViewer\LogFolderCollection;
+use App\Facades\LogViewer;
+use App\LogFile;
+use App\LogFileCollection;
+use App\LogFolder;
+use App\LogFolderCollection;
 
 test('LogViewer::getFilesInFolders() returns a LogFolderCollection', function () {
     expect(LogViewer::getFilesGroupedByFolder())->toBeInstanceOf(LogFolderCollection::class);

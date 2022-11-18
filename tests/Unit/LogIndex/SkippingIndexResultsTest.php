@@ -61,8 +61,8 @@ it('works across multiple chunks', function () {
 
 test('get() skips unnecessary chunks by not loading them into memory', function () {
     $timestamp = now()->subHour()->timestamp;
-    $logIndex = Mockery::mock('Opcodes\LogViewer\LogIndex[getChunk]', [
-        new \Opcodes\LogViewer\LogFile('laravel.log', 'laravel.log'),
+    $logIndex = Mockery::mock('App\LogIndex[getChunk]', [
+        new \App\LogFile('laravel.log', 'laravel.log'),
     ])->makePartial();
     $logIndex->setMaxChunkSize(2);
     $idx1 = $logIndex->addToIndex($pos1 = 0, $timestamp, 'info');
@@ -91,8 +91,8 @@ test('get() skips unnecessary chunks by not loading them into memory', function 
 
 test('getFlatIndex() skips unnecessary chunks by not loading them into memory', function () {
     $timestamp = now()->subHour()->timestamp;
-    $logIndex = Mockery::mock('Opcodes\LogViewer\LogIndex[getChunk]', [
-        new \Opcodes\LogViewer\LogFile('laravel.log', 'laravel.log'),
+    $logIndex = Mockery::mock('App\LogIndex[getChunk]', [
+        new \App\LogFile('laravel.log', 'laravel.log'),
     ])->makePartial();
     $logIndex->setMaxChunkSize(2);
     $idx1 = $logIndex->addToIndex($pos1 = 0, $timestamp, 'info');

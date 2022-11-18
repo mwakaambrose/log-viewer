@@ -1,6 +1,6 @@
 <?php
 
-use Opcodes\LogViewer\Facades\LogViewer;
+use App\Facades\LogViewer;
 use function PHPUnit\Framework\assertContains;
 use function PHPUnit\Framework\assertNotContains;
 

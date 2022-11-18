@@ -1,13 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Opcodes\LogViewer\Facades\LogViewer;
-use Opcodes\LogViewer\Http\Controllers\DownloadFileController;
-use Opcodes\LogViewer\Http\Controllers\DownloadFolderController;
-use Opcodes\LogViewer\Http\Controllers\IndexController;
-use Opcodes\LogViewer\Http\Controllers\IsScanRequiredController;
-use Opcodes\LogViewer\Http\Controllers\ScanFilesController;
-use Opcodes\LogViewer\Http\Controllers\SearchProgressController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+use App\Facades\LogViewer;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ScanFilesController;
+use App\Http\Controllers\DownloadFileController;
+use App\Http\Controllers\DownloadFolderController;
+use App\Http\Controllers\IsScanRequiredController;
+use App\Http\Controllers\SearchProgressController;
 
 Route::domain(LogViewer::getRouteDomain())
     ->middleware(LogViewer::getRouteMiddleware())

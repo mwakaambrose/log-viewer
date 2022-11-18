@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Cache;
-use Opcodes\LogViewer\LogFile;
+use App\LogFile;
 
 it('starts off with an empty index', function () {
     $logIndex = createLogIndex();

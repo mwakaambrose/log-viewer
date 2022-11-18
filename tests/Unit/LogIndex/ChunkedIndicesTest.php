@@ -1,7 +1,7 @@
 <?php
 
-use Opcodes\LogViewer\Exceptions\InvalidChunkSizeException;
-use Opcodes\LogViewer\LogFile;
+use App\Exceptions\InvalidChunkSizeException;
+use App\LogFile;
 
 it('can set the chunk size for the log index', function () {
     $logIndex = createLogIndex();

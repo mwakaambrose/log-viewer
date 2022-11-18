@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Gate;
 use Livewire\Livewire;
-use Opcodes\LogViewer\LogFile;
+use App\LogFile;
 
 test('can delete every file by default', function () {
     generateLogFiles([$fileName = 'laravel.log']);
